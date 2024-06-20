@@ -1,0 +1,63 @@
+body {
+    font-family: sans-serif;
+}
+
+article {
+    border: 2px solid black;
+}
+
+.price-label {
+    font-size: 25px;
+}
+
+.shipping-info {
+    color: #606060;
+    text-transform: uppercase;
+}
+
+a:link {
+    color: black;
+    text-decoration: underline;
+}
+
+a:link:visited {
+    color: black;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+a:active {
+    color: black;
+    text-decoration: none;
+}
+
+button, button:hover {
+    border: none;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+button {
+    background-color: black;
+    color: white;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+li {
+    list-style: square;
+}
+
+.article-title {
+    text-align: center;
+    text-transform: uppercase;
+    border-color: #f7f7f7
+}
