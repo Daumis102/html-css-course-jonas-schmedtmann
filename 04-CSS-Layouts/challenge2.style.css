@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+h3 {
+    margin: 20px 0;
+}
+
+.container {
+    width: 825px;
+    margin: 50px auto;
+}
+
+article {
+    border: 2px solid black;
+    position: relative;
+}
+
+img {
+    margin-bottom: 10px;
+}
+
+.price-label {
+    font-size: 25px;
+}
+
+.shipping-info {
+    color: #606060;
+    text-transform: uppercase;
+}
+
+p {
+    margin: 10px 0px
+}
+
+ul {
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+a:link {
+    color: black;
+    text-decoration: underline;
+}
+
+a:link:visited {
+    color: black;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+a:active {
+    color: black;
+    text-decoration: none;
+}
+
+button, button:hover {
+    border: none;
+    padding: 15px 0;
+    border-top: 2px solid black;
+    font-size: 22px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+button {
+    background-color: black;
+    color: white;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+li {
+    list-style: square;
+    margin-bottom: 10px;
+}
+
+li:last-child {
+    margin-bottom: 0px;
+}
+
+.article-title {
+    text-align: center;
+    text-transform: uppercase;
+    border-color: #f7f7f7;
+    padding: 30px 0;
+}
+
+article::before {
+    content: "SALE";
+    letter-spacing: 2px;
+    background-color: red;
+    color: white;
+    text-transform: uppercase;
+    top: -15px;
+    left: -35px;
+    position: absolute;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.color-box {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    margin-top: 30px;
+}
+
+.black {
+    background-color: black;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+.brown {
+    background-color: brown;
+}
+
+.row {
+    display: flex;
+    gap: 30px
+}
+
+.price-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.product-colors {
+    display: flex;
+    gap: 10px
+}
+
+.column {
+    flex: 1
+}
+
+.product-details {
+    margin-right: 20px
+}
