@@ -26,18 +26,20 @@
             <article>
                 <header class="post-header">
                     <h2>The Basic Language of the Web: HTML</h2>
+                    <div class="author-box">
 
-                    <img
-                            alt="Headshot of Laura Jones"
-                            class="author-img"
-                            height="50"
-                            src="img/laura-jones.jpg"
-                            width="50"
-                    />
+                        <img
+                                alt="Headshot of Laura Jones"
+                                class="author-img"
+                                height="50"
+                                src="img/laura-jones.jpg"
+                                width="50"
+                        />
 
-                    <p class="author" id="author">
-                        Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
-                    </p>
+                        <p class="author" id="author">
+                            Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+                        </p>
+                    </div>
 
                     <img
                             alt="HTML code on a screen"
@@ -117,35 +119,41 @@
                 <h4>Related posts</h4>
 
                 <ul class="related">
-                    <li>
+                    <li class="related-post">
                         <img
                                 alt="Person programming"
                                 height="75"
                                 src="img/related-1.jpg"
                                 width="75"
                         />
-                        <a href="#">How to Learn Web Development</a>
-                        <p class="related-author">By Jonas Schmedtmann</p>
+                        <div>
+                            <a class="related-link" href="#">How to Learn Web Development</a>
+                            <p class="related-author">By Jonas Schmedtmann</p>
+                        </div>
                     </li>
-                    <li>
+                    <li class="related-post">
                         <img
                                 alt="Lightning"
                                 height="75"
                                 src="img/related-2.jpg"
                                 width="75"
                         />
-                        <a href="#">The Unknown Powers of CSS</a>
-                        <p class="related-author">By Jim Dillon</p>
+                        <div>
+                            <a class="related-link" href="#">The Unknown Powers of CSS</a>
+                            <p class="related-author">By Jim Dillon</p>
+                        </div>
                     </li>
-                    <li>
+                    <li class="related-post">
                         <img
                                 alt="JavaScript code on a screen"
                                 height="75"
                                 src="img/related-3.jpg"
                                 width="75"
                         />
-                        <a href="#">Why JavaScript is Awesome</a>
-                        <p class="related-author">By Matilda</p>
+                        <div>
+                            <a class="related-link" href="#">Why JavaScript is Awesome</a>
+                            <p class="related-author">By Matilda</p>
+                        </div>
                     </li>
                 </ul>
             </aside>
