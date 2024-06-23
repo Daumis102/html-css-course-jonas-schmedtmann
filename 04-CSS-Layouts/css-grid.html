@@ -74,26 +74,43 @@
                 font-family: sans-serif;
                 background-color: black;
                 font-size: 40px;
-                margin: 100px;
+                margin: 40px;
 
-                width: 1000px;
+                width: 700px;
                 height: 600px;
 
                 /* CSS GRID */
+                display: grid;
+                grid-template-columns: 125px 200px 125px;
+                grid-template-rows: 250px 100px;
+                gap: 50px;
+
+                /* Aligning tracks inside container: distribute empty space*/
+                justify-content: center;
+                align-content: center;
+
+                /* Align items inside cells: moving items inside cells*/
+                align-items: center;
+                justify-items: center;
+            }
+
+            .el--3 {
+                align-self: end;
+                justify-self: end;
             }
         </style>
     </head>
     <body>
-        <div class="container--1">
-            <div class="el el--1">(1) HTML</div>
-            <div class="el el--2">(2) and</div>
-            <div class="el el--3">(3) CSS</div>
-            <div class="el el--4">(4) are</div>
-            <div class="el el--5">(5) amazing</div>
-            <div class="el el--6">(6) languages</div>
-            <div class="el el--7">(7) to</div>
-            <div class="el el--8">(8) learn</div>
-        </div>
+        <!--        <div class="container&#45;&#45;1">-->
+        <!--            <div class="el el&#45;&#45;1">(1) HTML</div>-->
+        <!--            <div class="el el&#45;&#45;2">(2) and</div>-->
+        <!--            <div class="el el&#45;&#45;3">(3) CSS</div>-->
+        <!--            <div class="el el&#45;&#45;4">(4) are</div>-->
+        <!--            <div class="el el&#45;&#45;5">(5) amazing</div>-->
+        <!--            <div class="el el&#45;&#45;6">(6) languages</div>-->
+        <!--            <div class="el el&#45;&#45;7">(7) to</div>-->
+        <!--            <div class="el el&#45;&#45;8">(8) learn</div>-->
+        <!--        </div>-->
 
         <div class="container--2">
             <div class="el el--1">(1)</div>
