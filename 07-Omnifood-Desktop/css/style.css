@@ -14,10 +14,12 @@ Default: 1
 Primary: #e67e22
 
 - Tints:
+#fdf2e9
 - Shades:
 - Accents:
 - Greys:
 #555
+#333
 
 
 --- 04 SHADOWS ---
@@ -47,13 +49,76 @@ body {
     color: #555; /* Good color to use */
 }
 
+.section-hero {
+    background-color: #fdf2e9;
+    padding: 9.6rem 0;
+}
+
 .hero {
     max-width: 130rem;
     margin: 0 auto; /* Center in the viewport */
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 9.6rem; /* uses same as padding top and bottom for consistency */
+}
+
+
+.heading-primary {
+    font-size: 5.2rem;
+    line-height: 1.05;
+    font-weight: bold;
+    color: #333;
+    letter-spacing: -0.5px; /* a very small number which doesn't really need to scale, so its fine to use px instead of rem */
+    margin-bottom: 3.2rem;
+}
+
+.hero-description {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+}
+
+.btn:link, .btn:visited {
+    font-size: 2rem;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    padding: 1.6rem 3.2rem; /* double the size on the sides than top and bottom */
+    border-radius: 9px;
+
+    transition: all 0.3s; /* This animates background-color and color whenever they have to change to different ones on hover and out of hover. Instead of "all" we could animate just one property by writing for example "background-color". This property should be put always on the original state. */
+}
+
+.btn--full:link, .btn--full:visited {
+    background-color: #e67e22;
+    color: #fff;
+}
+
+.btn--full:hover, .btn--full:active {
+    background-color: #cf711f;
+    color: #fff;
+}
+
+.btn--outline:link, .btn--outline:visited {
+    background-color: #fff;
+    color: #555;
+}
+
+.btn--outline:hover, .btn--outline:active {
+    background-color: #fdf2e9;
+    color: #555;
+
+    /* Trick to add border inside*/
+    /* border: 3px solid #fff; <-- This would not work, because it will apply the border outside of the button, making the whole layout shift once hovered, which looks bad */
+    box-shadow: inset 0 0 0 3px #fff; /* "inset" makes the shadow appear within the button*/
 }
 
 .hero-img {
     width: 100%
+}
+
+
+.margin-right-sm {
+    margin-right: 1.6rem !important; /* If we are adding this decorator to an element, we want it to have the specified effect, regardless of what other styling is on the element */
 }
