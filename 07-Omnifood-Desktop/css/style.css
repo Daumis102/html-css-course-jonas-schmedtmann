@@ -16,6 +16,7 @@ Primary: #e67e22
 - Tints:
 #fdf2e9
 - Shades:
+#cf711f
 - Accents:
 - Greys:
 #555
@@ -43,7 +44,7 @@ html {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: "Rubik", sans-serif;
     line-height: 1;
     font-weight: 400;
     color: #555; /* Good color to use */
@@ -81,6 +82,7 @@ body {
 
 .btn:link, .btn:visited {
     font-size: 2rem;
+    font-weight: 600;
     color: #fff;
     display: inline-block;
     text-decoration: none;
@@ -122,3 +124,38 @@ body {
 .margin-right-sm {
     margin-right: 1.6rem !important; /* If we are adding this decorator to an element, we want it to have the specified effect, regardless of what other styling is on the element */
 }
+
+
+.delivered-meals {
+    display: flex;
+    margin-top: 8rem;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.delivered-imgs {
+    display: flex;
+}
+
+.delivered-imgs img {
+    height: 4.8rem;
+    width: 4.8rem; /* Usually do not need to set width, but there is (was) a bug in safari when images are flex items, so need to add it */
+    border-radius: 50%;
+    margin-right: -1.6rem; /* To overlap the images */
+    border: 3px solid #fdf2e9; /* Add border to introduce some separation. Use the color from the background, so that faces become "detached" from each other */
+}
+
+.delivered-imgs img:last-child {
+    margin-right: 0; /* To overlap the images */
+}
+
+.delivered-text {
+    font-size: 1.8rem; /* Slightly smaller than the hero-description to maintain the hierarchy - this is less important. */
+    font-weight: 600;
+}
+
+.delivered-text span {
+    color: #cf711f; /* Had to check color contrast score between this and the background. It is on the lower side, but because this is bold, it will pass for AA regulation. */
+    font-weight: 700;
+}
+
