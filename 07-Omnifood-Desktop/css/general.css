@@ -114,7 +114,7 @@ body {
 
 .heading-tertiary {
     font-size: 3rem;
-    line-height: 1.2rem;
+    line-height: 2.6rem;
     margin-bottom: 3.2rem;
 }
 
@@ -165,8 +165,32 @@ body {
     box-shadow: inset 0 0 0 3px #fff; /* "inset" makes the shadow appear within the button*/
 }
 
+.link:link, .link:visited {
+    display: inline-block;
+    color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor; /* currentColor will take the value from "color" attribute */
+    padding-bottom: 2px;
+    transition: all 0.3s;
+}
+
+.link:hover, .link:active {
+    color: #cf711f;
+    border-bottom: 1px solid transparent; /* This will make the border disappear on hover. Still using 1px so that layout does not move when this one appears */
+}
+
+/* HELPER / SETTINGS CLASSES */
+
 .margin-right-sm {
     margin-right: 1.6rem !important; /* If we are adding this decorator to an element, we want it to have the specified effect, regardless of what other styling is on the element */
+}
+
+.margin-bottom-md {
+    margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+    text-align: center;
 }
 
 strong {
