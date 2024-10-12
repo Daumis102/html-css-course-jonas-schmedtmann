@@ -489,11 +489,33 @@
 }
 
 .cta-text-box {
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem; /* Large text makes an illusion that there is more space than there actually is, so making padding top slightly smaller to fix this */
+    color: #45260a /* Using a very dark shaded of primary color;*/
+}
 
+.cta-header {
+    margin-bottom: 4.8rem;
+}
+
+.cta .heading-secondary {
+    color: #45260a; /* Using a very dark shaded of primary color;*/
+    margin-bottom: 3.2rem;
+}
+
+.cta-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
 }
 
 .cta-img-box {
     background-image: linear-gradient(to right bottom, rgba(235, 152, 78, 0.3), rgba(230, 126, 34, 0.3)), url("../img/eating.jpg");
     background-size: cover;
     background-position: center;
+}
+
+.cta-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2.4rem;
+    column-gap: 3.2rem;
 }

@@ -453,7 +453,41 @@
             <section class="section-cta">
                 <div class="container">
                     <div class="cta">
-                        <div class="cta-text-box">CTA</div>
+                        <div class="cta-text-box">
+                            <header class="cta-header">
+                                <h2 class="heading-secondary">Get your first meal for free!</h2>
+                                <p class="cta-text">Healthy, tasty and hassle-free meals are waiting for you. Start
+                                    eating
+                                    well today. You can cancel or pause anytime. And
+                                    the first meal is on us!</p>
+                            </header>
+
+                            <form action="#" class="cta-form">
+                                <div>
+                                    <label for="full-name">Full Name</label>
+                                    <input class="cta-" id="full-name" placeholder="John Smith" required type="text"/>
+                                </div>
+
+                                <div>
+                                    <label for="email">Email address</label>
+                                    <input class="cta-" id="email" placeholder="me@example.com" required type="email"/>
+                                </div>
+
+                                <div>
+                                    <label for="select-where">Where did you hear from us?</label>
+                                    <select id="select-where" required>
+                                        <option value="">Please choose one option:</option>
+                                        <option value="friends">Friends and family</option>
+                                        <option value="youtube">Youtube video</option>
+                                        <option value="podcast">Podcast</option>
+                                        <option value="ad">Facebook ad</option>
+                                        <option value="others">Others</option>
+                                    </select>
+                                </div>
+
+                                <button class="btn">Sign up now</button>
+                            </form>
+                        </div>
                         <!-- Since we are adding img through CSS and not through <img>, by default it is invisible to screen readers. To fix this, we need to add the role and aria-label attributes -->
                         <div aria-label="Woman enjoying food" class="cta-img-box" role="img"></div>
                     </div>
