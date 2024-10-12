@@ -28,6 +28,7 @@ Primary: #e67e22
 #fae5d3
 - Shades:
 #cf711f
+ #45260a
 - Accents:
 - Greys:
 #555
@@ -139,7 +140,7 @@ body {
     letter-spacing: 0.75px; /* When text is small and uppercase, it usually looks much better when there is some letter spacing */
 }
 
-.btn:link, .btn:visited {
+.btn, .btn:link, .btn:visited {
     font-size: 2rem;
     font-weight: 600;
     color: #fff;
@@ -147,8 +148,12 @@ body {
     text-decoration: none;
     padding: 1.6rem 3.2rem; /* double the size on the sides than top and bottom */
     border-radius: 9px;
-
     transition: all 0.3s; /* This animates background-color and color whenever they have to change to different ones on hover and out of hover. Instead of "all" we could animate just one property by writing for example "background-color". This property should be put always on the original state. */
+
+    /* Only applicable for <button> */
+    border: none; /* Remove default border */
+    cursor: pointer;
+    font-family: inherit;
 }
 
 
@@ -174,6 +179,18 @@ body {
     /* Trick to add border inside*/
     /* border: 3px solid #fff; <-- This would not work, because it will apply the border outside of the button, making the whole layout shift once hovered, which looks bad */
     box-shadow: inset 0 0 0 3px #fff; /* "inset" makes the shadow appear within the button*/
+}
+
+.btn--form {
+    background-color: #45260a;
+    color: #fdf2e9;
+    align-self: end;
+    padding: 1.2rem;
+}
+
+.btn--form:hover {
+    background-color: #fff;
+    color: #555;
 }
 
 .link:link, .link:visited {
@@ -210,6 +227,16 @@ body {
     display: flex;
     align-items: center;
     gap: 1.6rem;
+}
+
+*:focus {
+    /*Could use outline property to change the appearance, but it is always square this way and may not match rounded borders on buttons and inputs */
+    /*outline: 4px dotted #e67e22;*/
+    /*outline-offset: 0.8rem ;*/
+
+    /* A nicer way is to use box-shadow */
+    outline: none;
+    box-shadow: 0 0 0 0.8rem rgba(230, 126, 34, 0.5);
 }
 
 /* HELPER / SETTINGS CLASSES */

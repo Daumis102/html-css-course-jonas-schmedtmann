@@ -484,8 +484,6 @@
     border-radius: 15px;
     background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
     overflow: hidden;
-    /*    temp*/
-    height: 50rem;
 }
 
 .cta-text-box {
@@ -498,7 +496,7 @@
 }
 
 .cta .heading-secondary {
-    color: #45260a; /* Using a very dark shaded of primary color;*/
+    color: inherit; /* use the color from the paren .cta-text-box */
     margin-bottom: 3.2rem;
 }
 
@@ -518,4 +516,32 @@
     grid-template-columns: 1fr 1fr;
     row-gap: 2.4rem;
     column-gap: 3.2rem;
+}
+
+.cta-form label {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+}
+
+.cta-form input, .cta-form select {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    color: inherit;
+    font-family: inherit; /* HTML input elements do not automatically inherit the font-family from the html <body>. Need to force them to do so */
+    border: none;
+    background-color: #fdf2e9;
+    border-radius: 9px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* By adding a very subtle shadow, we are makinga huge difference on how it looks like */
+}
+
+.cta-form input::placeholder {
+    color: #aaa; /* Placeholder should be lighter so that it does not appear as actual user-entered content */
+}
+
+.cta *:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
 }
