@@ -31,6 +31,8 @@ Primary: #e67e22
  #45260a
 - Accents:
 - Greys:
+#767676 (lightest gray allowed on #fff)
+#888
 #555
 #333
 #6f6f6f (lightest grey allows on #fdf2e9 background)
@@ -103,6 +105,10 @@ body {
 
 .grid--4-cols {
     grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .heading-primary, .heading-secondary, .heading-tertiary {
@@ -227,6 +233,10 @@ body {
     display: flex;
     align-items: center;
     gap: 1.6rem;
+}
+
+.logo {
+    height: 2.2rem; /* Breaking the spacing system here, because we needed it just slightly smaller than 2.4rem */
 }
 
 *:focus {
