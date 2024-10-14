@@ -175,6 +175,111 @@
     .main-nav-link:link, .main-nav-link:visited {
         font-size: 3rem;
     }
+
+}
+
+/***********************/
+/* BELOW 784 (Smaller Tablets) -- when recipes card name breaks into 2nd line and makes the card larger than the other one  */
+/***********************/
+@media (max-width: 49em) {
+    .grid--3-cols, .grid--4-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .diets {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+
+    .heading-secondary {
+        margin-bottom: 4.8rem;
+    }
+
+    .pricing-plan {
+        width: 100%;
+    }
+
+    .grid--footer {
+        grid-template-columns:repeat(6, 1fr);
+    }
+
+    .address-col, .logo-col {
+        grid-column: span 3;
+    }
+
+    .nav-col {
+        grid-row: 1;
+        grid-column: span 2;
+        margin-bottom: 3.2rem;
+    }
+}
+
+/***********************/
+/* BELOW 620 (Phones) -- In the video the adds this one at 550 pixels, but I think it looks trash at that size already, so creasing it here  */
+/***********************/
+@media (max-width: 38em) {
+    .grid {
+        row-gap: 4.8rem;
+    }
+
+    .grid--2-cols, .grid--3-cols, .grid--4-cols {
+        grid-template-columns: 1fr;
+    }
+
+    .section-hero {
+        padding: 2.4rem 0 6.4rem 0
+    }
+
+    .hero {
+        padding: 0 3.2rem;
+    }
+
+    .btn, .btn:link, .btn:visited {
+        padding: 2.4rem 1.6rem;
+    }
+
+    .hero-img {
+        width: 80%;
+    }
+
+    .logos img {
+        height: 1.2rem;
+    }
+
+    .step-image-box:nth-child(2) { /* step-img-box which we are selecting is 2nd element in its parent, so even though it is the first element with step-img-box class, we need to select the 2nd element */
+        grid-row: 1;
+    }
+
+    .step-image-box:nth-child(6) {
+        grid-row: 5;
+    }
+
+    .step-image-box {
+        transform: translateY(2.4rem); /* Move the image closer to the step heading to which it actually belongs. Quickest way without affecting other elements is translate */
+    }
+
+    .testimonials {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.2rem;
+    }
+
+    .cta {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-img-box {
+        grid-row: 1;
+        height: 32rem;
+        background-position: 0 20%;
+    }
+
+    .cta-text-box {
+        padding: 3.2rem;
+    }
 }
 
 /*
