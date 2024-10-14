@@ -119,6 +119,62 @@
     .btn--form {
         margin-top: 1.2rem;
     }
+
+    /* Mobile navigation */
+    .button-mobile-nav {
+        display: block;
+    }
+
+    .main-nav {
+        background-color: rgba(255, 255, 255, 0.97);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        transform: translateX(100%);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease-in;
+
+        /* Hide navigation */
+        /*display: none;*/ /* Allows no transitions at all */
+
+        /* 1) Hide it visually */
+        opacity: 0;
+
+        /* 2) Make it inaccessible to mouse and keyboard */
+        pointer-events: none;
+
+        /* Hie it from screen readers */
+        visibility: hidden;
+    }
+
+    .nav-open .icon-mobile-navigation[name="close-outline"] {
+        display: block;
+    }
+
+    .nav-open .icon-mobile-navigation[name="menu-outline"] {
+        display: none;
+    }
+
+    .nav-open .main-nav {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateX(0%); /* Performs much better than animating "left" or other similar attributes */
+    }
+
+    .main-nav-list {
+        flex-direction: column;
+        gap: 4.8rem;
+    }
+
+    .main-nav-link:link, .main-nav-link:visited {
+        font-size: 3rem;
+    }
 }
 
 /*
