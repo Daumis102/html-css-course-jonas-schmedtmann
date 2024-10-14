@@ -3,7 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta content="IE=edge" http-equiv="X-UA-Compatible">
+
+        <!-- Always include: This line is crucial for responsive design -- without this media queries won't work on handheld devices. This line sets page's width the same as devices, instead of zooming out to fit the UI -->
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
         <!--   Tried "Inter" font style, however, it is quite boxy (for example letter "l" is just a rectangle), so does not match the "caml" website personality of the website. Need to apply something rounder.     -->
         <!--        <link href="https://fonts.googleapis.com" rel="preconnect">-->
         <!--        <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">-->
@@ -18,6 +21,7 @@
 
         <link href="css/general.css" rel="stylesheet"/>
         <link href="css/style.css" rel="stylesheet"/>
+        <link href="css/queries.css" rel="stylesheet"/>
 
         <!--  Installs <ion-icon> custom html element for easy and clean usage of icons from IonicIcons pack    -->
         <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" type="module"></script>
