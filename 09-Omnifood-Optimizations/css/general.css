@@ -64,6 +64,9 @@ html {
     font-size: 62.5%; /* Makes 1rem = 10px. Using percentage of default browser font-size (10px / 16px) allows users to change the default browser font-size for accessibility while the UI adjusts automatically. */
     overflow-x: hidden; /* Hides the side menu on mobile. Needs to be set for both html and body to work */
 
+    /* Following does not work on IE and Opera */
+    scroll-behavior: smooth;
+
 }
 
 body {
