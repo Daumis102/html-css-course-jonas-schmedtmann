@@ -36,3 +36,22 @@ allLinks.forEach(function (link) {
         }
     })
 })
+
+// Add sticky navigation only when scrolled past hero
+
+const sectionHeroEl = document.querySelector('.section-hero');
+
+const observer = new IntersectionObserver((entries) => {
+    const ent = entries[0];
+    if (ent.isIntersecting === false) {
+        document.body.classList.add('sticky');
+    } else {
+        document.body.classList.remove('sticky');
+    }
+}, {
+    root: null, // setting to null will mean it will track how element will move in relation to the viewport
+    threshold: 0, // fire event as soon as 0% of the hero-section is in the viewport
+    rootMargin: '-80px' // 80px is the height of the hero section. We want to fire the event 80px before the hero section is out of the viewport so that when it appears, we are not immediately covering the featured-in section
+})
+observer.observe(sectionHeroEl);
+

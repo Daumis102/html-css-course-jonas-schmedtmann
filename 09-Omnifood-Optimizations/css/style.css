@@ -69,6 +69,24 @@
     display: none;
 }
 
+/* STICKY NAVIGATION */
+.sticky .header { /* Need to add the sticky class not to the header itself, but to the body (section-hero parent), so that we can compensate for the sticky navigation's height whenever sticky class appears on the parent */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.97);
+    z-index: 999;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 8rem;
+    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.sticky .section-hero {
+    margin-top: 8rem; /* To compensate for the sticky navigation once it appears*/
+}
+
 /***********************/
 /* HERO SECTION */
 /***********************/
