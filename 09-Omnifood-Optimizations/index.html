@@ -7,11 +7,26 @@
         <!-- Always include: This line is crucial for responsive design -- without this media queries won't work on handheld devices. This line sets page's width the same as devices, instead of zooming out to fit the UI -->
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
+        <meta content="Omnifood is a premium food delivery service with the mission to bring affordable and healthy meals to as many people as possible."
+              name="description">
+
         <!--   Tried "Inter" font style, however, it is quite boxy (for example letter "l" is just a rectangle), so does not match the "caml" website personality of the website. Need to apply something rounder.     -->
         <!--        <link href="https://fonts.googleapis.com" rel="preconnect">-->
         <!--        <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">-->
         <!--        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"-->
         <!--              rel="stylesheet">-->
+
+        <link href="img/favicon-browser.png" rel="icon" type="image/png"> <!-- add favicon -->
+
+        <!-- **** FAVICONS ***** -->
+
+        <!-- add icon for apple for using on home screen when saving the link to the website. Needs to be 180px x 180px -->
+        <link href="img/apple-touch-icon.png" rel="apple-touch-icon" type="image/png">
+
+        <!-- add icons for android devices for saving the link to the home screen. These are added through a new file and require 2 favicon of different dimensions: 192x192px and 512x512px -->
+        <link href="manifest.webmanifest" rel="manifest">
+
+        <!-- ********** -->
 
         <!--   Rubik font looks better for our website as it is a bit rounder (while still maintaining startup personality)-->
         <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -32,7 +47,7 @@
         <!--    Add JS polyfill for implementing smooth scroll behaviour on Opera and IE through JS   -->
         <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
 
-        <title>Omnifood</title>
+        <title>Omnifood &mdash; Never cook again!</title> <!-- &mdash; is a larger dash than the regular "-" -->
     </head>
     <body>
         <header class="header">
