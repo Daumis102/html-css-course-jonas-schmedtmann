@@ -96,9 +96,17 @@
                         </div>
                     </div>
                     <div class="hero-image-box">
-                        <img alt="Woman enjoying food, meals in storage containers, and food bowls on a table"
-                             class="hero-img"
-                             src="img/hero.png"/>
+                        <!-- WebP format  is a recent format and may not be supported by all browsers. Wrapping an image with <picture> and providing 2 sources will make the browser select the image which can be best displayed and show it to the user -->
+                        <picture>
+                            <source srcset="img/hero.webp" type="image/webp"/>
+                            <source srcset="img/hero.png" type="image/png"/>
+
+                            <!-- Fallback image in case the browser does not support <picture>. If browser supports picture and webP format, this will automatically be replaced with webP image.  -->
+                            <img alt="Woman enjoying food, meals in storage containers, and food bowls on a table"
+                                 class="hero-img"
+                                 src="img/hero.webp"
+                            />
+                        </picture>
                     </div>
                 </div>
             </section>
